@@ -17,7 +17,7 @@ import java.util.Optional;
  * Created by sskim on 2021/08/21
  * Github : http://github.com/sskim91
  */
-public interface MemberRepository extends JpaRepository<Member, Long> {
+public interface MemberRepository extends JpaRepository<Member, Long>, MemberRepositoryCustom {
 
     List<Member> findByUsernameAndAgeGreaterThan(String username, int age);
 
